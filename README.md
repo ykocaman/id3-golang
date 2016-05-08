@@ -6,9 +6,9 @@ ID3 Algorithm in GoLang
 ```
 - don't forget to change file path for different file.
 
-**file:** id3.go  **line:**  9
+**file:** id3.go
 ```
-dataset := Load("**data/baseball.csv**")
+Line 9:		dataset := Load("data/baseball.csv")
 ```
 
 **Example Console Output**
