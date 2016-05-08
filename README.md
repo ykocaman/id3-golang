@@ -9,7 +9,7 @@ ID3 Algorithm in GoLang
 **file:** id3.go  **line:**  9
 > dataset := Load("**data/baseball.csv**")
 
-**Example Console Output **
+**Example Console Output**
 ```
 	||-Outlook  =>  Overcast
 	|			|->> Yes
