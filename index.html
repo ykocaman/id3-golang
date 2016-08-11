@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Id3-golang by ykocaman</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Id3-golang</h1>
+        <p>ID3 Algorithm in GoLang</p>
+
+        <p class="view"><a href="https://github.com/ykocaman/id3-golang">View the Project on GitHub <small>ykocaman/id3-golang</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/ykocaman/id3-golang/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/ykocaman/id3-golang/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/ykocaman/id3-golang">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a id="id3-algorithm-in-golang" class="anchor" href="#id3-algorithm-in-golang" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ID3 Algorithm in GoLang</h2>
+
+<p><strong>Usage</strong></p>
+
+<pre><code>`go build` &amp;&amp; ./id3
+</code></pre>
+
+<ul>
+<li>don't forget to change file path for different file.</li>
+</ul>
+
+<p><strong>file:</strong> id3.go</p>
+
+<pre><code>Line 9:     dataset := Load("data/baseball.csv")
+</code></pre>
+
+<p><strong>Example Console Output</strong></p>
+
+<pre><code>    ||-Outlook  =&gt;  Overcast
+    |           |-&gt;&gt; Yes
+    ||-Outlook  =&gt;  Sunny
+    |           |-Humidity  =&gt;  Normal
+    |                       |-&gt;&gt; Yes
+    |           |-Humidity  =&gt;  High
+    |                       |-&gt;&gt; No
+    ||-Outlook  =&gt;  Rain
+    |           |-Wind  =&gt;  Weak
+    |                       |-&gt;&gt; Yes
+    |           |-Wind  =&gt;  Strong
+    |                       |-&gt;&gt; No
+</code></pre>
+
+<hr>
+
+<p><a href="http://www.cise.ufl.edu/%7Eddd/cap6635/Fall-97/Short-papers/2.htm">The ID3 Algorithm Details</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/ykocaman">ykocaman</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>

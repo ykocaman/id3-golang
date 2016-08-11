@@ -1,0 +1,6 @@
+{
+  "name": "Id3-golang",
+  "tagline": "ID3 Algorithm in GoLang",
+  "body": "ID3 Algorithm in GoLang\r\n-------\r\n**Usage**\r\n```\r\n`go build` && ./id3\r\n```\r\n- don't forget to change file path for different file.\r\n\r\n**file:** id3.go\r\n```\r\nLine 9:\t\tdataset := Load(\"data/baseball.csv\")\r\n```\r\n\r\n**Example Console Output**\r\n```\r\n\t||-Outlook  =>  Overcast\r\n\t|\t\t\t|->> Yes\r\n\t||-Outlook  =>  Sunny\r\n\t|\t\t\t|-Humidity  =>  Normal\r\n\t|\t\t\t\t\t\t|->> Yes\r\n\t|\t\t\t|-Humidity  =>  High\r\n\t|\t\t\t\t\t\t|->> No\r\n\t||-Outlook  =>  Rain\r\n\t|\t\t\t|-Wind  =>  Weak\r\n\t|\t\t\t\t\t\t|->> Yes\r\n\t|\t\t\t|-Wind  =>  Strong\r\n\t|\t\t\t\t\t\t|->> No\r\n```\r\n\r\n\r\n----------\r\n\r\n [The ID3 Algorithm Details](http://www.cise.ufl.edu/~ddd/cap6635/Fall-97/Short-papers/2.htm)",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
