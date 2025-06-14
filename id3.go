@@ -23,10 +23,12 @@ func id3(dataset *datasetBase, depth int) (subdataset *datasetBase) {
 	dataset.CalculateEntropies()
 	dataset.CalculateGains()
 
-	for value, _ /* entropy */ := range dataset.counts[dataset.gains.Max()] {
+	maxGain:=dataset.gains.Max()
+	for value, _ /* entropy */ := range dataset.counts[maxGain] {
 		fmt.Print("|", strings.Repeat("	", depth*3), "|-")
-		fmt.Println(dataset.gains.Max(), " => ", value)
-		id3(dataset.SubDataset(value), depth+1)
+
+		fmt.Println(maxGain, " => ", value)
+		id3(dataset.SubDataset(maxGain,value), depth+1)
 	}
 	return
 }
